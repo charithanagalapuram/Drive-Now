@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drive Now</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+     
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    
+    .row.content {height: 460px}
+    
+    /* Set gray background color and 100% height */
+    
+    /* Set black background color, white text and some padding */
+    
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      width: 153%;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+        
+      .row.content {height:auto;} 
+    }
+.column {
+	float: Left;
+	width: 20.33%;
+	padding: 5px;
+}
+.row :: after {
+	content: "";
+	clear: both;
+	diplay: table;
+}
+
+ </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">DriveNow
+	</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+	
+      <ul class="nav navbar-nav">	
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="Maps.jsp">Maps</a></li>
+        <li><a href="Hotels.jsp">Hotels</a></li>
+		<li><a href="TollH.jsp">Tolls</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="Register.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-8 text-left"> 
+      <div class="slides" style="width:90%; height:2%; float:left;">
+      <img class="mySlides" src="travel-photography-tips-boys-playing-in-lagoon.jpg" style="width:170%">
+      <img class="mySlides" src="Travel-Photographer-Slider-Kolkata-Top-Best-India.jpg" style="width:170%">
+      <img class="mySlides" src="Bheemeshwari.jpg" style="width:170%">
+    </div>
+</div>
+    <div class="content" style="max-width:1100px;">
+  <div class="container margin-top">
+    <h2 style="color:White;">Good Offers Right Now</h2>
+    <i><h4 style="color:White;">Up to <strong>50%</strong> discount.</h4></i>
+  </div>
+<div class="container">
+<div class = "row">
+     <center><h2>Explore Nature</h2></center>
+    <div class="col-md-4">
+      <img src="Cover1.jpg" alt="ooty" style="width:300px">
+        <h4>Ooty, INDIA</h4>
+     </div>
+    <div class="col-md-4">
+      <img src="coorg.jpg" alt="coorg" style="width:300px">
+        <h4>Coorg, INDIA</h4>
+    </div>
+   <div class="col-md-4">
+     <img src="gangtokk.jpg" alt="gangtokk" style="width:270px">
+        <h4>Gangtokk, INDIA</h4>
+    </div>
+    <div class="col-md-4">
+      <img src="goa.png" alt="goa" style="width:300px"> 
+        <h4>Goa, INDIA</h4>
+    </div>
+    <div class="col-md-4">
+      <img src="agraa.jpg" alt="agraa" style="width:300px"> 
+        <h4>Agraa, INDIA</h4>
+    </div>
+    <div class="col-md-4">
+      <img src="boat.jpg" alt="kerala" style="width:270px"> 
+        <h4>Kerala, INDIA</h4>
+    </div>
+  </div>
+</div>
+</div>
+<footer class="container-fluid text-center">
+
+
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>
+</body>
+</html>

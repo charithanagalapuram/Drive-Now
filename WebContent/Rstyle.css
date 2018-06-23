@@ -1,0 +1,58 @@
+@CHARSET "ISO-8859-1";
+html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background:url("regi.jpg") 50% 50% no-repeat;
+	background-size: cover;
+	display: table;
+}
+.Register {
+	border: 1px solid rgba(255,255,255,0.3);
+	border-radius: 5px;
+	padding: 3em;
+	position:absolute;
+	top: 8%;
+	left: 5%
+	transform: translateX(-25%) translateY(-25%);
+}
+h2 {
+	font-family: verdana;
+	font-weight: lighter;
+	color:#fff;
+	font-size: 50px;
+	text-align: center;
+}
+input{
+	display:block;
+	width: 320px;
+	height: 50px;
+	background:rgba(0,0,0,0);
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.5);
+	font-family: verdana;
+	font-weight: lighter;
+	font-size: 14px;
+	margin-botton: 10px;
+	padding-left: 10px;
+	border-radius: 5px;
+}
+
+button{
+	width: 332px;
+	height: 50px;
+	font-size: 16px;
+	background: #000;
+	font-weight: lighter;
+	color: #fff;
+	border: 0px;
+	border-radius: 5px;
+}
+
